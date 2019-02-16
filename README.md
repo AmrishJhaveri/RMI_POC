@@ -1,3 +1,9 @@
+Referential Integrity in RMI: 
+
+If two references to an object are passed from one JVM to another JVM in parameters (or in the return value) in a single remote method call and those references refer to the same object in the sending JVM, those references will refer to a single copy of the object in the receiving JVM.
+
+
+
 To test:
 
 `sbt clean compile test`
@@ -9,4 +15,5 @@ To run Server:
 
 To run Client:
 
-`sbt clean compile run` (select Client i.e option 1)
+`sbt run` (select Client i.e option 1)
+
