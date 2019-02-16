@@ -22,6 +22,7 @@ public class Client {
             UserObject usrObj2 = usrObj1;
             logger.info("Ref1 - Client:" + usrObj1);
             logger.info("Ref2 - Client:" + usrObj2);
+            logger.info("Ref1 & Ref2 == (address)check:" + (usrObj1 == usrObj2));
             // Calling the remote method using the obtained object
             stub.printMsg(usrObj1, usrObj2);
 
