@@ -9,4 +9,4 @@ To run Server:
 
 To run Client:
 
-`sbt clean compile run` (select Server i.e option 1)
+`sbt clean compile run` (select Client i.e option 1)
