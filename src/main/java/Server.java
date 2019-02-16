@@ -31,8 +31,6 @@ public class Server extends ImplExample {
         Registry registry = LocateRegistry.createRegistry(1099);
 
         // Binding the remote object (stub) in the registry
-//        Registry registry = LocateRegistry.getRegistry();
-
         //bind the stub to an entry
         registry.rebind("Hello", stub);
     }
